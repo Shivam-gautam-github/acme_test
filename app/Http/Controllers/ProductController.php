@@ -59,7 +59,7 @@ class ProductController extends Controller
 
     }
     public function view(){
-        $products = Product::paginate(10); // Adjust the number to your needs
+        $products = Product::paginate(10); // Adjust the number to your needs, okay fdf
         return view('Product.view', compact('products'));
     }
     public function edit(Request $request){
